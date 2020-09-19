@@ -1,7 +1,7 @@
 package com.swat018.service.posts;
 
-import com.swat018.web.domain.posts.Posts;
-import com.swat018.web.domain.posts.PostsRepository;
+import com.swat018.domain.posts.Posts;
+import com.swat018.domain.posts.PostsRepository;
 import com.swat018.web.dto.PostsResponseDto;
 import com.swat018.web.dto.PostsSaveRequestDto;
 

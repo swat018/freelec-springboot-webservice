@@ -1,4 +1,4 @@
-package com.swat018.web.domain.posts;
+package com.swat018.domain.posts;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

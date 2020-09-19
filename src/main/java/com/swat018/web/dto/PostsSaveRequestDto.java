@@ -1,6 +1,6 @@
 package com.swat018.web.dto;
 
-import com.swat018.web.domain.posts.Posts;
+import com.swat018.domain.posts.Posts;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
