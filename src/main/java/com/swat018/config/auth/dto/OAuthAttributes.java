@@ -1,5 +1,4 @@
-package com.swat018.config.auth;
-
+package com.swat018.config.auth.dto;
 import com.swat018.domain.user.Role;
 import com.swat018.domain.user.User;
 import lombok.Builder;
@@ -7,6 +6,9 @@ import lombok.Getter;
 
 import java.util.Map;
 
+/**
+ * @author jinwoopark
+ */
 @Getter
 public class OAuthAttributes {
     private Map<String, Object> attributes;

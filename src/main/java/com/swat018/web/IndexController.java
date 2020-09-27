@@ -1,5 +1,6 @@
 package com.swat018.web;
 
+import com.swat018.config.auth.LoginUser;
 import com.swat018.config.auth.dto.SessionUser;
 import com.swat018.service.posts.PostsService;
 import com.swat018.web.dto.PostsResponseDto;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import javax.mail.Session;
 import javax.servlet.http.HttpSession;
 
 /**
@@ -20,12 +22,11 @@ import javax.servlet.http.HttpSession;
 public class IndexController {
 
     private final PostsService postsService;
-    private final HttpSession httpSession;
 
     @GetMapping("/")
-    public String index(Model model) {
+    public String index(Model model, @LoginUser SessionUser user) {
         model.addAttribute("posts", postsService.findAllDese());
-        SessionUser user = (SessionUser)httpSession.getAttribute("user");
+
         if(user != null) {
             model.addAttribute("userName", user.getName());
         }

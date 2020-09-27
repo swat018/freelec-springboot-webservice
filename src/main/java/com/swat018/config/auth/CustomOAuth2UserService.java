@@ -1,5 +1,6 @@
 package com.swat018.config.auth;
 
+import com.swat018.config.auth.dto.OAuthAttributes;
 import com.swat018.config.auth.dto.SessionUser;
 import com.swat018.domain.user.User;
 import com.swat018.domain.user.UserRepository;
