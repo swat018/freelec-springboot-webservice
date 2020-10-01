@@ -33,6 +33,7 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-mustache')
     compile('org.springframework.boot:spring-boot-starter-oauth2-client')
     compile('org.springframework.session:spring-session-jdbc')
+    compile group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.7.0'
 
     testCompileOnly 'org.projectlombok:lombok'
     testAnnotationProcessor 'org.projectlombok:lombok'
